@@ -1,7 +1,8 @@
 import { Router } from "express"
-import { createDog } from "../controllers/create-dog.controller"
+import { createDog, deleteDog, getDogs } from "../controllers/dog.controller"
 
 const dogRouter = Router()
 dogRouter.post("/dog", createDog)
-
+dogRouter.get("/dogs", getDogs)
+dogRouter.delete("/dog/:id", deleteDog)
 export default dogRouter
