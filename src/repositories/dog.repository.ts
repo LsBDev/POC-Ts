@@ -28,3 +28,11 @@ export function deleteDogDB(id) {
     WHERE Cachorros.id = $1;
   `, [id])
 }
+
+export function updateDogDB({weight, age, id}) {
+  return db.query(`
+  UPDATE cachorros
+  SET peso = $1, idade = $2
+  WHERE id = $3;
+  `, [weight, age, id])
+}
