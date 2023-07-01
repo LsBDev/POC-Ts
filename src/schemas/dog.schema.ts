@@ -6,5 +6,5 @@ export const dogSchema = Joi.object<Dog>({
   age: Joi.number().required(),
   race: Joi.string().required(),
   weight: Joi.number().required(),
-  id: Joi.number().required()
+  tutor_id: Joi.number().required()
 })

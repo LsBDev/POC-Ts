@@ -3,5 +3,5 @@ export type Dog = {
   age: number,
   race: string,
   weight: number,
-  id: number
+  tutor_id: number
 }
