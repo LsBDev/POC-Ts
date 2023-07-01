@@ -31,8 +31,8 @@ export function deleteDogDB(id) {
 
 export function updateDogDB({weight, age, id}) {
   return db.query(`
-  UPDATE cachorros
-  SET peso = $1, idade = $2
-  WHERE id = $3;
+    UPDATE cachorros
+    SET peso = $1, idade = $2
+    WHERE id = $3;
   `, [weight, age, id])
 }

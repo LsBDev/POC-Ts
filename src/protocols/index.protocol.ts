@@ -1,3 +1,4 @@
+//----CACHORROS-----
 export type Dog = {
   name: string, 
   age: number,
@@ -7,3 +8,10 @@ export type Dog = {
 }
 
 export type UpdateDog = Omit<Dog, "name" | "race" | "tutor_id">
+
+//----TUTORES-----
+export type Tutor = {
+  name: string, 
+  email: string,
+  phone: string
+}
