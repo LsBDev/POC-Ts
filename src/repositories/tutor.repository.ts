@@ -6,3 +6,10 @@ export function createTutorDB({name, email, phone}: Tutor) {
     INSERT INTO Tutores (nome, email, telefone) VALUES ($1, $2, $3)
   `, [name, email, phone])
 }
+
+export function deleteTutorDB(id: string) {
+  return db.query(`
+    DELETE FROM Tutores
+    WHERE Tutores.id = $1;
+  `, [id])
+}

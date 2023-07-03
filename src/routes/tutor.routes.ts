@@ -1,9 +1,13 @@
 import { Router } from "express"
-import { createTutor } from "../controllers/tutor.controller"
+import { createTutor, deleteTutor } from "../controllers/tutor.controller"
 
 const tutorRouter = Router()
 
-tutorRouter.post("/tutor", createTutor)
+// Rotas não implementadas
+
+// tutorRouter.post("/tutor", createTutor)
+
+// tutorRouter.delete("/tutor/:id", deleteTutor)
 
 
 export default tutorRouter
